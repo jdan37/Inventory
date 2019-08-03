@@ -1,12 +1,23 @@
 from tkinter import *
-
+from p_page import *
 
 def donothing():
     print('test')
 
 
-root = Tk()
+def new_item():
+    child = Tk()
+    child.geometry("200x100")
 
+
+
+
+
+
+
+
+
+root = Tk()
 
 #structure of page
 root.geometry("800x500")
@@ -14,7 +25,7 @@ root.geometry("800x500")
 # MENU BAR
 menubar = Menu(root)
 filemenu = Menu(menubar, tearoff=0)
-filemenu.add_command(label="New", command=donothing)
+filemenu.add_command(label="New", command=new_item())
 filemenu.add_command(label="Open", command=donothing)
 filemenu.add_command(label="Save", command=donothing)
 filemenu.add_separator()
